@@ -23,7 +23,7 @@ if errorlevel 1 (
 
 echo.
 echo [2/3] Creazione eseguibile (puo' richiedere qualche minuto)...
-pyinstaller build.spec --noconfirm
+python -m PyInstaller build.spec --noconfirm
 if errorlevel 1 (
     echo ERRORE durante la creazione dell'eseguibile.
     pause
